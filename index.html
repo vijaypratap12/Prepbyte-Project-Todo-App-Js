@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5384685fcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <div class="header-content">
+          <div class="main-heading" id="main-heading">
+            <h1>Task List</h1>
+          </div>
+          <div id="card-header-content">
+            <h1>
+              <i class="fas fa-chevron-circle-left" onclick="backDisplay()"></i
+              >Back
+            </h1>
+          </div>
+          <div id="middle-mini-item">
+            <h1 id="middle-mini-item-heading"></h1>
+          </div>
+          <div>
+            <span
+              ><i class="fas fa-plus-circle" onclick="addTaskInput()"></i
+            ></span>
+            <span id="add-task-name"> Add Item</span>
+          </div>
+        </div>
+      </header>
+
+      <div id="noItemMsg">
+        <p>No Item in the todo list</p>
+      </div>
+
+      <div id="list-container"></div>
+    </div>
+
+    <div id="task-input-container">
+      <div class="task-input-heading">
+        <h1>Add New List</h1>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="ListName"
+          id="list"
+          placeholder="Add New List"
+        />
+      </div>
+      <br />
+      <div class="task-input-button">
+        <p id="addbtn" onclick="addDataObj()">ADD</p>
+        <p>Close</p>
+      </div>
+    </div>
+
+    <div id="minitask-input-container">
+      <div class="task-input-heading">
+        <h1>Add New Item</h1>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="ListName"
+          id="minilist"
+          placeholder="Add New Item"
+        />
+      </div>
+      <br />
+      <div class="task-input-button">
+        <p id="miniaddbtn">ADD</p>
+        <p>Close</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
